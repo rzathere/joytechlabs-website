@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="JoyTech Labs - Building Intelligent Products. Creating Real Impact."
+  />
+  <title>JoyTech Labs | AI Research & Technology</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #070b14;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(14px);
+      background: rgba(7, 11, 20, 0.85);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      z-index: 100;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: #4cc9ff;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+    }
+
+    nav ul li a:hover {
+      color: #4cc9ff;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    .hero {
+      min-height: 92vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at top, rgba(0,180,255,.15), transparent 60%),
+        #070b14;
+    }
+
+    .hero h1 {
+      font-size: 3.8rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      color: #b7c2d3;
+      font-size: 1.15rem;
+    }
+
+    .buttons {
+      margin-top: 35px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .secondary {
+      background: transparent;
+      border: 1px solid #4cc9ff;
+      color: #4cc9ff;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      color: #b7c2d3;
+      margin-bottom: 35px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 16px;
+      padding: 24px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #2563eb;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #2563eb22;
+      color: #6ab5ff;
+      font-size: .8rem;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+      max-width: 650px;
+    }
+
+    input,
+    textarea {
+      padding: 14px;
+      border-radius: 10px;
+      border: none;
+      background: #121826;
+      color: white;
+    }
+
+    textarea {
+      min-height: 140px;
+    }
+
+    footer {
+      padding: 35px;
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,.08);
+      color: #9aa6b8;
+    }
+
+    .links {
+      margin-top: 10px;
+    }
+
+    .links a {
+      margin: 0 10px;
+      color: #4cc9ff;
+    }
+
+    @media(max-width:700px){
+      .hero h1{
+        font-size:2.4rem;
+      }
+
+      nav{
+        flex-direction:column;
+        gap:12px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">JoyTech Labs</div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#careers">Careers</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h1>Engineering the Future with Artificial Intelligence.</h1>
+
+    <p>
+      JoyTech Labs is an independent AI research and engineering company
+      building intelligent products across Artificial Intelligence,
+      Cybersecurity, Machine Learning, Data Science, Autonomous Systems,
+      and Deep Tech innovation.
+    </p>
+
+    <div class="buttons">
+      <button class="btn primary">Explore Research</button>
+      <button class="btn secondary">Join Us</button>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+
+  <p class="subtitle">
+    <strong>Building Intelligent Products. Creating Real Impact.</strong>
+  </p>
+
+  <p>
+    JoyTech Labs develops trustworthy, scalable, and impactful AI
+    technologies through applied research in Artificial Intelligence,
+    Machine Learning, Cybersecurity, Data Science, Autonomous Systems,
+    and Space & Critical Infrastructure Security.
+  </p>
+
+  <br>
+
+  <p><strong>Mission:</strong> To develop trustworthy, scalable, and impactful AI technologies that solve real-world challenges.</p>
+
+  <br>
+
+  <p><strong>Vision:</strong> To become a globally recognized AI research and innovation lab.</p>
+</section>
+
+<section id="research">
+  <h2>Research Areas</h2>
+
+  <div class="grid">
+    <div class="card">Large Language Models</div>
+    <div class="card">AI Security</div>
+    <div class="card">Cybersecurity</div>
+    <div class="card">Anomaly Detection</div>
+    <div class="card">Computer Vision</div>
+    <div class="card">Autonomous Agents</div>
+    <div class="card">Data Intelligence</div>
+    <div class="card">Responsible AI</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>CERT-SAT</h3>
+      <p>AI-powered satellite telemetry anomaly detection platform.</p>
+      <span class="badge">Research</span>
+    </div>
+
+    <div class="card">
+      <h3>AI Security Copilot</h3>
+      <p>AI assistant for cyber defense and security operations.</p>
+      <span class="badge">Prototype</span>
+    </div>
+
+    <div class="card">
+      <h3>Intelligent Analytics Platform</h3>
+      <p>Advanced analytics powered by machine learning pipelines.</p>
+      <span class="badge">Beta</span>
+    </div>
+
+    <div class="card">
+      <h3>Research Prototypes</h3>
+      <p>Experimental AI systems exploring future technologies.</p>
+      <span class="badge">In Development</span>
+    </div>
+
+  </div>
+</section>
+
+<section id="careers">
+  <h2>Careers & Internships</h2>
+
+  <p class="subtitle">
+    We welcome exceptional students, engineers, and researchers.
+  </p>
+
+  <div class="grid">
+    <div class="card">AI Research Intern</div>
+    <div class="card">Software Engineering Intern</div>
+    <div class="card">Data Science Intern</div>
+  </div>
+
+  <br>
+
+  <button class="btn primary">Apply Now</button>
+</section>
+
+<section id="team">
+  <h2>Our Team</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Masoom Raza</h3>
+      <p>Founder & CEO</p>
+    </div>
+
+    <div class="card">
+      <h3>Future Team Member</h3>
+      <p>Join us in building the future of AI.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Blog & Insights</h2>
+
+  <div class="grid">
+    <div class="card">Research Articles</div>
+    <div class="card">Engineering Blogs</div>
+    <div class="card">Technical Notes</div>
+    <div class="card">Product Updates</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <p>Email: founder@joytechlabs.com</p>
+
+  <br>
+
+  <form>
+    <input type="text" placeholder="Your Name">
+
+    <input type="email" placeholder="Email Address">
+
+    <textarea placeholder="Your Message"></textarea>
+
+    <button class="btn primary" type="submit">
+      Send Message
+    </button>
+  </form>
+</section>
+
+<footer>
+  <p>
+    © 2026 JoyTech Labs. All Rights Reserved.
+  </p>
+
+  <div class="links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
